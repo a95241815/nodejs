@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p icebear
+  p
+    |hello
+    |world
+  - console.log('hello')
+  - var s = 'hello icebear'
+  p #{s}
+  p= s
+  script.
+    alert('d')
